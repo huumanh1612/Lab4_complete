@@ -1,0 +1,45 @@
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0); /* Làm nền trong suốt */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Đổ bóng nhẹ */
+  }
+  
+  .top-navbar h2 {
+    font-size: 16px;
+  }
+  
+  .top-navbar .icon {
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .search-section {
+    position: relative;
+  }
+  
+  .search-input {
+    position: absolute;
+    top: 50%; /* Canh giữa theo chiều dọc */
+    right: 0;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255, 255, 255, 1); /* Viền mờ */
+    border-radius: 5px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 1); /* Nền trong suốt */
+    color: white; /* Chữ màu trắng */
+    font-size: 14px;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Thêm hiệu ứng mượt */
+  }
+  
+  .search-input:focus {
+    background-color: rgba(255, 255, 255, 1); /* Thay đổi khi focus */
+    color: black; /* Chữ đổi sang đen khi gõ */
+  }
+  
